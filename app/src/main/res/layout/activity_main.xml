@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Form Register"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="50dp"
+        android:textSize="30sp"
+        android:textColor="@color/high"
+        android:fontFamily="@font/poppins_bold"
+        />
+
+    <TextView
+        android:id="@+id/username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Username"
+        android:textColor="@color/dft"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        android:fontFamily="@font/poppins_regular"
+        android:textSize="16sp"/>
+
+    <EditText
+        android:id="@+id/input_username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/input"
+        android:layout_marginHorizontal="25dp"
+        android:paddingStart="20dp"
+        android:textColorHint="@color/low"
+        android:hint="Enter your username"
+        android:textSize="15sp"
+        android:fontFamily="@font/poppins_regular"
+        android:inputType="text"/>
+
+    <TextView
+        android:id="@+id/email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="25dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        android:text="Email"
+        android:fontFamily="@font/poppins_regular"
+        android:textColor="@color/dft"
+        android:textSize="16sp"/>
+
+    <EditText
+        android:id="@+id/input_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/input"
+        android:layout_marginHorizontal="25dp"
+        android:hint="Enter your email"
+        android:textColorHint="@color/low"
+        android:paddingStart="20dp"
+        android:textSize="15sp"
+        android:fontFamily="@font/poppins_regular"
+        android:inputType="textEmailAddress"/>
+
+    <TextView
+        android:id="@+id/no_handphone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        android:text="Telephone"
+        android:textColor="@color/dft"
+        android:fontFamily="@font/poppins_regular"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/input_no_hp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="25dp"
+        android:background="@drawable/input"
+        android:hint="Enter your telephone number"
+        android:textColorHint="@color/low"
+        android:textSize="15sp"
+        android:paddingStart="20dp"
+        android:fontFamily="@font/poppins_regular"
+        android:inputType="phone"/>
+
+    <TextView
+        android:id="@+id/gender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Gender"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        android:textColor="@color/dft"
+        android:fontFamily="@font/poppins_regular"
+        android:textSize="16sp"/>
+
+    <RadioGroup
+        android:id="@+id/gender_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/radio_male"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/dft"
+            android:text="Male"/>
+
+        <RadioButton
+            android:id="@+id/radio_female"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Female"
+            android:textColor="@color/dft"
+            android:layout_marginStart="16dp"/>
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btn_register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="25dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/btn"
+        android:fontFamily="@font/poppins_semi_bold"
+        android:text="Create your account"
+        android:textAllCaps="false"
+        android:textColor="@color/white" />
+
+</LinearLayout>
